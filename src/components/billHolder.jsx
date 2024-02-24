@@ -3,9 +3,13 @@ import Tip from "./billTip";
 import { useState } from "react";
 
 function BillHolder() {
+  // parent component state variables
+
   const [bill, setBill] = useState("");
   const [serviceTip, setServiceTip] = useState(0);
   const [friendTip, setFriendTip] = useState(0);
+
+  // Event handler functions:
 
   function handleBillChange(e) {
     if (e.target.value === "") {
@@ -48,6 +52,9 @@ function BillHolder() {
       <Tip tip={friendTip} onTipChange={handleFriendTipChange}>
         How did you friend like the service?
       </Tip>
+
+      {/*  I could probably create 2 further components to hold the you pay section and the reset button */}
+
       {bill === "" ? null : (
         <div>
           You will pay{" "}
