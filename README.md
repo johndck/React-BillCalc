@@ -36,7 +36,7 @@ Fork the code and run on a localhost.
 
 You can see screenshots of the application here:
 
-![Portfolio screenshot](/screenshot of the application.png)
+![Screenshot of the application](application.png)
 
 ## Questions
 
